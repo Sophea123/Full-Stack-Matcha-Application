@@ -1,0 +1,25 @@
+# Preserve the prior standalone Flutter repository locally; do not publish its Git data.
+shopping_app/.git.backup/
+
+# Secrets and local environment configuration.
+**/.env
+**/.env.*
+!**/.env.example
+
+# Reproducible dependencies and generated artifacts.
+**/node_modules/
+**/vendor/
+**/build/
+**/.dart_tool/
+
+# Local agent/tool configuration and local database exports.
+.postman/
+**/.agents/
+**/.claude/
+**/.codex/
+**/database/backups/
+
+# OS and editor files.
+.DS_Store
+.idea/
+.vscode/
